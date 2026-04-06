@@ -1,0 +1,184 @@
+/* GLOBAL STYLES*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background:#F5F5DC;
+    color:#333;
+    line-height:1.6;
+}
+
+section{
+    padding:70px 8%;
+}
+
+h1,h2,h3{
+    font-family:'Noto Serif', serif;
+    color:#8B4513;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* NAVIGATION */
+nav{
+    background:#8B4513;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#DAA520;
+}
+
+/*  HERO / HOME */
+.hero{
+    text-align:center;
+    padding-top:100px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#DAA520;
+    font-size:18px;
+    margin-bottom:25px;
+
+    /* animation */
+    animation:fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* FEATURED CITIES (GRID)*/
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#DAA520;
+    color:white;
+}
+
+/* GALLERY GRID */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.gallery-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.gallery-card:hover{
+    background:#DAA520;
+    color:white;
+}
+
+/* CITY OF THE DAY (FLEXBOX)*/
+.city-day{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:center;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.city-day:hover{
+    background:#DAA520;
+    color:white;
+}
+
+.city-day img{
+    width:350px;
+    border-radius:12px;
+}
+
+/*FORM*/
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:12px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+input:focus, textarea:focus{
+    border-color:#DAA520;
+    outline:none;
+    transform:scale(1.02);
+}
+
+button{
+    padding:12px;
+    border:none;
+    background:#8B4513;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#DAA520;
+}
+
+/*FOOTER*/
+footer{
+    text-align:center;
+    padding:25px;
+    background:#8B4513;
+    color:white;
+}

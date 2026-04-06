@@ -1,0 +1,115 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: radial-gradient(circle at top, #1c1c1c, #000);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+    }
+
+    .line {
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #ff004f, transparent);
+        margin: 20px 0px;
+        box-shadow: 0 0 12px #ff004f; 
+      
+    }
+    .red-border {
+    padding: 70px;
+    border-radius: 22px;
+    background: #0b0b0b;
+
+    border: 2px solid #ff0033;
+
+    box-shadow:
+        0 0 20px #ff0033,
+        0 0 40px rgba(255, 0, 51, 0.8),
+        0 0 80px rgba(255, 0, 51, 0.6);
+}
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        color: #c7a96a;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .video-frame {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 12px;
+        background: #000;
+        box-shadow:
+            0 0 15px rgba(255,255,255,0.6),
+            0 0 30px rgba(255,0,79,0.5);
+    }
+
+    video {
+        width: 240px;
+        height: 360px;
+        border-radius: 8px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    button {
+        background: #e6002d;
+        color: #fff;
+        border: none;
+        padding: 10px 22px;
+        margin: 5px;
+        font-size: 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(255,0,79,0.6);
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff003c;
+        transform: translateY(-2px);
+    }
+
+    /* Rating Modal */
+    .rating-box {
+        display: none;
+        margin-top: 15px;
+    }
+
+    .star {
+        font-size: 28px;
+        color: gray;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .star:hover,
+    .star.active {
+        color: gold;
+    }
+
+    .thanks {
+        margin-top: 10px;
+        color: #7CFC00;
+        display: none;
+    }
